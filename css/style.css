@@ -1,0 +1,142 @@
+* /* global */
+{
+    box-sizing:border-box
+}
+body
+{
+    background-color:#e03d2c;
+    color:#f8dbba;
+    padding:50px 100px;
+    font-family:Arial, Helvetica, sans-serif
+}
+/* navbar */
+nav
+{
+    overflow:hidden /* normalize float */
+}
+nav ul
+{
+    margin:0;
+    padding:0;
+    float:left
+}
+nav ul li
+{
+    list-style:none;
+    display:inline-block;
+    text-transform:capitalize;
+    font-size:15px;
+    transition:all .3s ease-in-out;
+    font-weight:bold;
+    width:160px
+}
+nav ul li:nth-child(2)
+{
+    text-align:center
+}
+nav ul li:hover,
+nav ul .active
+{
+    font-size:20px
+}
+nav ul li a
+{
+    text-decoration:none;
+    color:#f8dbba
+}
+nav input
+{
+    background:none;
+    border:2px solid #f8dbba;
+    padding:13px 40px;
+    border-radius:5px;
+    color:#f8dbba;
+    font-size:15px;
+    float:right;
+    cursor:pointer;
+    font-weight:bold;
+    transition:all .3s ease-in-out
+}
+nav input:hover
+{
+    background-color:#f8dbba;
+    color:#e03d2c
+}
+/* content */
+.content
+{
+    overflow:hidden /* normalize float */
+}
+.content article
+{
+    float:left;
+    width:50%
+}
+.content article h1
+{
+    font-size:100px;
+    text-transform:capitalize
+}
+.content article p
+{
+    font-size:20px;
+    font-weight:bold
+}
+.content article button
+{
+    background:none;
+    border:2px solid #f8dbba;
+    color:#f8dbba;
+    font-size:15px;
+    font-weight:bold;
+    border-radius:5px;
+    padding:10px 40px;
+    text-transform:capitalize;
+    transition:all .3s ease-in-out;
+    cursor:pointer
+}
+.content article button:hover
+{
+    background-color:#f8dbba;
+    color:#e03d2c
+}
+.content img
+{
+    float:right;
+    width:50%
+}
+/* responsive for maximum width 767px */
+@media(max-width:767px)
+{
+    body
+    {
+        padding:50px 10px
+    }
+    /* navbar */
+    nav ul
+    {
+        float:unset;
+        text-align:center
+    }
+    nav ul li
+    {
+        display:block;
+        width:unset;
+        margin:10px 0
+    }
+    nav input
+    {
+        float:unset;
+        margin:20px calc(50% - 65.5px)
+    }
+    /* content */
+    .content article
+    {
+        float:unset;
+        width:100%
+    }
+    .content article h1
+    {
+        font-size:58px
+    }
+}
